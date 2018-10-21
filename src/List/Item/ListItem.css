@@ -1,0 +1,7 @@
+.image {
+  width: 300px;
+}
+
+.selected {
+  background-color: lightyellow;
+}

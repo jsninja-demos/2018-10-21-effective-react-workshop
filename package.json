@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5",
@@ -12,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,6 +29,12 @@
   "devDependencies": {
     "arui-feather": "^12.11.3",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "@storybook/react": "^4.0.0-rc.1",
+    "@storybook/addon-actions": "^4.0.0-rc.1",
+    "@storybook/addon-links": "^4.0.0-rc.1",
+    "@storybook/addons": "^4.0.0-rc.1",
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4"
   }
 }
