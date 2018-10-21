@@ -1,11 +1,11 @@
 import { withRouter } from "react-router-dom";
 import { compose, withHandlers } from "recompose";
-import Login from "./Login";
+import Login from "./Login.view";
 import withCheckLoading from "./withCheckLoading";
 import withFacebookLogin from "./withFacebookLogin";
 import withGooglePlusLogin from "./withGooglePlusLogin";
 
-import { login } from "../utils";
+import { login } from "../api/apiCore";
 
 const GOOGLE_PLUS_CLIENT_ID =
   "160137448536-kdkcol1p2lamg5kfvhd1u3p0sp1tu42o.apps.googleusercontent.com";
@@ -19,7 +19,7 @@ export default compose(
   withHandlers({
     login: props => async () => {
       await login();
-      props.history.push("/success");
+      props.history.push("/list");
     }
   })
 )(Login);

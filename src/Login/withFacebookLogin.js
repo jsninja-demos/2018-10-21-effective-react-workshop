@@ -1,5 +1,5 @@
-import { withHandlers } from 'recompose';
-import { url } from '../utils';
+import { withHandlers } from "recompose";
+import url from "../helpers/url";
 
 const withFacebookLogin = clientId =>
   withHandlers({
@@ -9,7 +9,7 @@ const withFacebookLogin = clientId =>
                                redirect_uri=${document.location.origin}&
                                state={st=state123abc,ds=123456789}`);
       document.location = redirectUrl;
-    },
+    }
   });
 
 export default withFacebookLogin;

@@ -1,5 +1,5 @@
 import { withHandlers } from "recompose";
-import { url } from "../utils";
+import url from "../helpers/url";
 
 const withGooglePlusLogin = clientId =>
   withHandlers({

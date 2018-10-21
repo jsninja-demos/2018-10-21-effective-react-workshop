@@ -1,12 +1,12 @@
-import React from 'react';
-import Form from 'arui-feather/form';
-import Input from 'arui-feather/input';
-import Plate from 'arui-feather/plate';
-import Button from 'arui-feather/button';
-import Heading from 'arui-feather/heading';
-import FormField from 'arui-feather/form-field';
-import EmailInput from 'arui-feather/email-input';
-import './index.css';
+import React from "react";
+import Form from "arui-feather/form";
+import Input from "arui-feather/input";
+import Plate from "arui-feather/plate";
+import Button from "arui-feather/button";
+import Heading from "arui-feather/heading";
+import FormField from "arui-feather/form-field";
+import EmailInput from "arui-feather/email-input";
+import "./Login.css";
 
 const Login = ({ login, loginWithGooglePlus, loginWithFacebook }) => (
   <Plate theme="alfa-on-color" size="xl">

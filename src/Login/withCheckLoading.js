@@ -1,7 +1,7 @@
-import withLoading from './withLoading';
-import { compose, lifecycle } from 'recompose';
-import { withRouter } from 'react-router-dom';
-import { checkLogin } from '../utils';
+import withLoading from "./withLoading";
+import { compose, lifecycle } from "recompose";
+import { withRouter } from "react-router-dom";
+import { checkLogin } from "../api/apiCore";
 
 const withCheckLoading = compose(
   withRouter,
@@ -10,10 +10,10 @@ const withCheckLoading = compose(
     async componendDidMount() {
       const hasLogined = await checkLogin();
       if (hasLogined) {
-        this.props.history.push('/success');
+        this.props.history.push("/success");
         return;
       }
-    },
+    }
   })
 );
 
