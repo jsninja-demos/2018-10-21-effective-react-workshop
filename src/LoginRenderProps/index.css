@@ -1,0 +1,73 @@
+:root {
+  --brand-red: #ef3124;
+  --ui-red: #f04539;
+  --background: #f3f4f5;
+  --primary: #0b1f35;
+  --secondary: #858f9a;
+  --gray: #b6bcc3;
+  --background-personal: #0e3464;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.plate {
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: inline-block;
+  border-bottom: 5px solid var(--brand-red);
+  padding-bottom: 5px;
+}
+
+.button {
+  background-color: var(--brand-red) !important;
+}
+
+.button.button_disabled {
+  opacity: 0.5;
+}
+
+.plate__content {
+  min-width: 80%;
+}
+
+.input {
+  display: block;
+}
+
+.form-field.login-section {
+  display: flex;
+}
+
+.social-button .button__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-button img {
+  margin-right: 8px;
+}
+
+.button.google-plus {
+  background-color: var(--ui-red) !important;
+  border: none;
+}
+
+.button.facebook {
+  background-color: var(--background-personal) !important;
+  border: none;
+}
+
+.button.facebook img {
+  width: 20px;
+}

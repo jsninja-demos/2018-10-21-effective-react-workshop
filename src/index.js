@@ -7,6 +7,7 @@ import LoginSeparatedButtons from "./LoginSeparatedButtons";
 import LoginHoc from "./LoginHoc";
 import Login from "./Login";
 import LoginRecompose from "./LoginRecompose";
+import LoginRenderProps from "./LoginRenderProps";
 
 import "./index.css";
 
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="/login2" component={LoginSeparatedButtons} />
       <Route path="/login3" component={LoginHoc} />
       <Route path="/login4" component={LoginRecompose} />
+      <Route path="/login5" component={LoginRenderProps} />
     </>
   </BrowserRouter>,
   document.getElementById("root")
