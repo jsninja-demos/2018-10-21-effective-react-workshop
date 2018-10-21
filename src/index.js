@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import LoginSeparatedButtons from "./LoginSeparatedButtons";
 import LoginHoc from "./LoginHoc";
 import Login from "./Login";
+import LoginRecompose from "./LoginRecompose";
 
 import "./index.css";
 
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Route path="/login" component={Login} />
       <Route path="/login2" component={LoginSeparatedButtons} />
       <Route path="/login3" component={LoginHoc} />
+      <Route path="/login4" component={LoginRecompose} />
     </>
   </BrowserRouter>,
   document.getElementById("root")
