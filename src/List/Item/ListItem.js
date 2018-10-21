@@ -7,13 +7,19 @@ import cx from "classnames";
 import "./ListItem.css";
 
 export default ({ photo, checked, onChecked }) => (
-  <Plate theme="alfa-on-color" size="xl" className={cx({ selected: checked })}>
+  <Plate
+    theme="alfa-on-color"
+    size="m"
+    className={cx({ item: true, selected: checked })}
+  >
     <Heading size="s">
       <Checkbox checked={checked} onChange={onChecked} />
       &nbsp;
       {photo.title}
     </Heading>
-    <img className="image" src={photo.image} />
+    <p>
+      <img className="image" src={photo.image} />
+    </p>
     <div>
       by{" "}
       <strong>

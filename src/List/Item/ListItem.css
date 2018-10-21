@@ -1,5 +1,9 @@
+.item {
+  min-width: 200px !important;
+}
+
 .image {
-  width: 300px;
+  width: 150px;
 }
 
 .selected {
